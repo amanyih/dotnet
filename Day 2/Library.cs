@@ -49,6 +49,32 @@ namespace Day2{
         }
     } 
 
+    public List<Book> SearchBoks(string keyword){
+        keyword = keyword.ToLower(); //convert keyword to lowercase
+        List<Book> results = new List<Book>();
+        foreach (Book book in Books)
+        {
+            if(book.Title.ToLower().Contains(keyword) || book.Author.ToLower().Contains(keyword) || book.ISBN.ToLower().Contains(keyword) || book.PublicationYear.ToString().Contains(keyword)){
+                results.Add(book);
+            }
+        }
+
+        return results;
+
+    }
+
+    public List<MediaItem> SearchMediaItems(string keyword){
+        keyword = keyword.ToLower(); //convert keyword to lowercase
+        List<MediaItem> results = new List<MediaItem>();
+        foreach (MediaItem item in MediaItems)
+        {
+            if(item.Title.ToLower().Contains(keyword) || item.MediaType.ToLower().Contains(keyword) || item.Duration.ToString().Contains(keyword)){
+                results.Add(item);
+            }
+        }
+
+        return results;
+
     }
 
     class Book{
@@ -64,6 +90,10 @@ namespace Day2{
             ISBN = isbn;
             PublicationYear = publicationYear;
         }
+
+        public ToString (){
+            return $"Title: {Title}, Author: {Author}, ISBN: {ISBN}, Publication Year: {PublicationYear}";
+        
     }
 
     class MediaItem{
@@ -76,5 +106,12 @@ namespace Day2{
             MediaType = mediaType;
             Duration = duration;
         }
+
+        public ToString (){
+            return $"Title: {Title}, Type: {MediaType}, Duration: {Duration} minutes";}
+        
     }
-}
+
+
+
+    }}}
