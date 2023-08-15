@@ -1,6 +1,6 @@
 namespace Day_3
 {
-    enum TaskItme{
+    enum TaskItem{
         Personal,
         Work,
         Shopping,

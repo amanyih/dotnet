@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace Day_3
 {
     class TaskManager
@@ -18,6 +20,10 @@ namespace Day_3
                 Console.WriteLine(task.ToString());
             }
         }
+        public void updateTask(Task task){
+            this.Tasks = Tasks.Where(cur => cur.Title != task.Title).ToList();
+            
+        }
         public void PrintPendingTasks()
         {
             var pendingTasks = Tasks.Where(task => task.IsCompleted == false).ToList();
@@ -34,7 +40,7 @@ namespace Day_3
             Console.WriteLine("3. Shopping");
             Console.WriteLine("4. Others");
             Console.WriteLine("Enter your choice: ");
-            var choice = int.Parse(Console.ReadLine());
+            var choice = int.Parse(Console.ReadLine()!);
             var taskItem = (TaskItem)choice - 1;
             var tasks = Tasks.Where(task => task.TaskItem == taskItem).ToList();
             for (int i = 0; i < tasks.Count; i++)
@@ -52,6 +58,8 @@ namespace Day_3
             }
         }
 
+    
+
         public void viewTasks(){
             
             Console.WriteLine("1. View All Tasks");
@@ -60,11 +68,11 @@ namespace Day_3
             Console.WriteLine("4. View Tasks By Type");
 
             Console.WriteLine("Enter your choice: ");
-            var choice = int.Parse(Console.ReadLine());
+            var choice = int.Parse(Console.ReadLine()!);
             switch(choice)
             {
                 case 1:
-                    PrintTasks();
+                    PrintAllTasks();
                     break;
                 case 2:
                     PrintCompletedTasks();
@@ -93,7 +101,7 @@ namespace Day_3
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
-                    var values = line.Split(',');
+                    var values = line!.Split(',');
                     var title = values[0];
                     var description = values[1];
                     var taskItem = (TaskItem)Enum.Parse(typeof(TaskItem), values[2]);
