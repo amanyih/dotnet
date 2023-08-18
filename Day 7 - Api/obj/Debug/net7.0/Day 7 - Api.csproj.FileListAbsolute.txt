@@ -1,0 +1,33 @@
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\appsettings.Development.json
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\appsettings.json
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\Day 7 - Api.exe
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\Day 7 - Api.deps.json
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\Day 7 - Api.runtimeconfig.json
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\Day 7 - Api.dll
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\Day 7 - Api.pdb
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\Day 7 - Api.csproj.AssemblyReference.cache
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\Day 7 - Api.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\Day 7 - Api.AssemblyInfoInputs.cache
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\Day 7 - Api.AssemblyInfo.cs
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\Day 7 - Api.csproj.CoreCompileInputs.cache
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\Day 7 - Api.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\Day 7 - Api.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\staticwebassets\msbuild.Day 7 - Api.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\staticwebassets\msbuild.build.Day 7 - Api.props
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Day 7 - Api.props
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Day 7 - Api.props
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\staticwebassets.pack.json
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\staticwebassets.build.json
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\staticwebassets.development.json
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\scopedcss\bundle\Day 7 - Api.styles.css
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\Day 7 - Api.csproj.CopyComplete
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\Day 7 - Api.dll
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\refint\Day 7 - Api.dll
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\Day 7 - Api.pdb
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\Day 7 - Api.genruntimeconfig.cache
+c:\Users\user\Desktop\Practice\.net\dotnet\Day 7 - Api\obj\Debug\net7.0\ref\Day 7 - Api.dll
