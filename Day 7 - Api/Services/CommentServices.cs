@@ -1,4 +1,5 @@
 using Blog.Data;
+using Blog.Dtos;
 using Blog.Models;
 
 namespace Blog.Services;
@@ -10,13 +11,19 @@ public class CommentServices{
         _blogDbContext = blogDbContext;
     }
 
-    public Comment CreateComment(Comment comment){
+    public Comment CreateComment(CommentDto commentDto){
         //validate comment
-        if(comment.Content == null){
+        if(commentDto.Content == null){
             throw new Exception("Content is required");
         }
         //check if post exists
-        _ = _blogDbContext.Posts.Find(comment.PostId) ?? throw new Exception("Post Doesn't Exist");
+        _ = _blogDbContext.Posts.Find(commentDto.PostId) ?? throw new Exception("Post Doesn't Exist");
+
+        Comment comment = new()
+        {
+            PostId = commentDto.PostId,
+            Content = commentDto.Content
+        };
 
         _blogDbContext.Comments.Add(comment);
         _blogDbContext.SaveChanges();
@@ -31,7 +38,7 @@ public class CommentServices{
         return _blogDbContext.Comments.Find(id) ?? throw new Exception("Comment Doesn't Exist");
     }
 
-    public Comment? UpdateComment(int id, Comment comment){
+    public Comment? UpdateComment(int id, CommentDto comment){
         var commentToUpdate = _blogDbContext.Comments.Find(id) ?? throw new Exception("Comment Doesn't exist");
         
         commentToUpdate.Content = comment.Content ?? commentToUpdate.Content;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj": {}
+    "c:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj": {
+    "c:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj",
+        "projectUniqueName": "c:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj",
         "projectName": "Day 7 - Api",
-        "projectPath": "C:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj",
+        "projectPath": "c:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\obj\\",
+        "outputPath": "c:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

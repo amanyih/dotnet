@@ -1,4 +1,5 @@
 using Blog.Data;
+using Blog.Dtos;
 using Blog.Models;
 
 namespace Blog.Services;
@@ -31,7 +32,7 @@ public class PostService{
         return _blogDbContext.Posts.Find(id) ?? throw new Exception("Post Doesn't exist");
     }
 
-    public Post? UpdatePostById(int id, Post post){
+    public Post? UpdatePostById(int id, PostDto post){
         var postToUpdate = _blogDbContext.Posts.Find(id) ?? throw new Exception("Post Doesn't Exist");
 
         postToUpdate.Title = post.Title ?? postToUpdate.Title;

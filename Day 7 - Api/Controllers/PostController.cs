@@ -1,4 +1,5 @@
 using Blog.Data;
+using Blog.Dtos;
 using Blog.Models;
 using Blog.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -16,10 +17,17 @@ public class PostController : ControllerBase{
     }
 
     [HttpPost]
-    public IActionResult Create(Post post){
+    public IActionResult Create(PostDto postDto){
+        Console.WriteLine("Heree");
         try{
+            Post post = new()
+            {
+                Title = postDto.Title,
+                Content = postDto.Content
+            };
             return Created("",_postService.CreatePost(post));
         }catch(Exception e){
+            Console.WriteLine(e.Message);
             return BadRequest(e.Message);
         }
     }
@@ -43,7 +51,7 @@ public class PostController : ControllerBase{
     }
 
     [HttpPut("{id}")]
-    public IActionResult Update(int id, Post post){
+    public IActionResult Update(int id, PostDto post){
         try{
             _postService.UpdatePostById(id,post);
             return NoContent();
