@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj": {}
+    "C:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj": {
+    "C:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj",
         "projectName": "Day 7 - Api",
-        "projectPath": "c:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\Day 7 - Api.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Practice\\.net\\dotnet\\Day 7 - Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,22 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.4, )"
             },
