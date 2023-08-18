@@ -11,6 +11,13 @@ public class CommentServices{
     }
 
     public Comment CreateComment(Comment comment){
+        //validate comment
+        if(comment.Content == null){
+            throw new Exception("Content is required");
+        }
+        //check if post exists
+        _ = _blogDbContext.Posts.Find(comment.PostId) ?? throw new Exception("Post Doesn't Exist");
+
         _blogDbContext.Comments.Add(comment);
         _blogDbContext.SaveChanges();
         return comment;
@@ -21,26 +28,23 @@ public class CommentServices{
     }
 
     public Comment? GetCommentById(int id){
-        return _blogDbContext.Comments.Find(id);
+        return _blogDbContext.Comments.Find(id) ?? throw new Exception("Comment Doesn't Exist");
     }
 
     public Comment? UpdateComment(int id, Comment comment){
-        var commentToUpdate = _blogDbContext.Comments.Find(id);
-
-        if(commentToUpdate != null){
-            commentToUpdate.Content = comment.Content;
-            commentToUpdate.UpdatedAt = DateTime.Now;
-            _blogDbContext.SaveChanges();
-        }
+        var commentToUpdate = _blogDbContext.Comments.Find(id) ?? throw new Exception("Comment Doesn't exist");
+        
+        commentToUpdate.Content = comment.Content ?? commentToUpdate.Content;
+        commentToUpdate.UpdatedAt = DateTime.Now;
+        _blogDbContext.SaveChanges();
+        
         return commentToUpdate;
     }
 
     public void DeleteCommentById(int id){
-        var comment = _blogDbContext.Comments.Find(id);
-        if(comment != null){
-            _blogDbContext.Comments.Remove(comment);
-            _blogDbContext.SaveChanges();
-        }
+        var comment = _blogDbContext.Comments.Find(id) ?? throw new Exception("Comment Doesn't exist");
+        _blogDbContext.Comments.Remove(comment);
+        _blogDbContext.SaveChanges();    
     }
 
 }
